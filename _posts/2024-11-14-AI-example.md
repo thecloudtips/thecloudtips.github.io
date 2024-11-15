@@ -15,8 +15,6 @@ In this blog post, we'll walk through how to deploy an AI-powered application on
 
 ## Data Flow
 
----------
-
 Before diving into the specific components, it’s important to understand how data flows through the architecture. This architecture automates the processing and classification of documents using Azure services, leveraging serverless functions to orchestrate the entire workflow. Here's an overview of the data flow:
 
 1. **Document Upload**: The user uploads documents through the Azure Web App frontend. The uploaded documents are stored in an Azure Blob Storage account.
@@ -148,8 +146,6 @@ The web app serves as the user interface for document upload, providing a seamle
 * **account\_kind**: **StorageV2** provides the latest features for blob, table, and queue storage with improved performance.
 
 The storage account is used to store unstructured data (such as documents) uploaded via the web app.
-
-* * *
 
 ### 3.5 Managed Identities and Role Assignments
 
